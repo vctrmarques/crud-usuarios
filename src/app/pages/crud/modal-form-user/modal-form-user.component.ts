@@ -76,7 +76,7 @@ export class ModalFormUserComponent {
               console.error(err);
         });
 
-      } els\\e {
+      } else {
         // SALVAR USUÁRIO
         this.userService.addUser(objUserForm).then(
           (response: any) => {
