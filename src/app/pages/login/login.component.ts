@@ -10,12 +10,12 @@ export class LoginComponent {
 
   userName: string;
 
-  constructor(private router: Router) {}
-
+  constructor(private rota: Router) {}
 
   login() {
     sessionStorage.setItem('user', this.userName);
-    this.router.navigate(['home']);  
+
+    this.rota.navigate(['home']);
   }
 
 }
